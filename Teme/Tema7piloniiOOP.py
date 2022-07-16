@@ -50,6 +50,9 @@ class Patrat(FormaGeometrica): #clasa copil care mosteneste clasa FormaGeometric
         aria = self.__latura**2
         return aria
 
+    def descrie(self):
+        print('Sigur am colturi, 4')
+
     @property
     def latura(self):
         return self.__latura
@@ -101,6 +104,9 @@ class Cerc(FormaGeometrica):
         aria = self.PI * self.__raza**2
         return aria
 
+    def descrie(self):
+        print('Eu nu am colturi dar asta nu e o problema')
+
     @property
     def raza(self):
         return self.__raza
@@ -129,4 +135,7 @@ print(cerc1.aria())
 del cerc1.raza
 #getter
 cerc1.raza
+patrat1.descrie()
+cerc1.descrie()
+
 
